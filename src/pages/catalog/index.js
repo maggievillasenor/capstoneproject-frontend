@@ -1,3 +1,11 @@
-export default function Catalog () {
-    return <h1> New Catalog Page</h1>
+import PageDescription from "@/components/PageDescription";
+
+export default function CatalogPage () {
+    return (
+    <section>
+        <PageDescription 
+            title="Shop Now" 
+            description=""
+        />
+    </section>);
 }
