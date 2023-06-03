@@ -21,6 +21,7 @@ export default function Layout ({ children }) {
         <>
             <Header title="Ma Chérie">
                 <Link href="/">Home</Link>
+                <Link href="/catalog">Catalog</Link>
                 <Link href="/admin">Admin</Link>
                 <Link href="/checkout">
                     <IconButton aria-label="cart">
