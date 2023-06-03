@@ -29,7 +29,7 @@ header {
   justify-content: space-between;
   padding: 15px 50px;
   background-color: #fff;
-  box-shadow: 0 5px 10px 0 #ccc;
+  box-shadow: 0 5px 10px 0 #dfbecb;
 }
 
 header a {
@@ -41,7 +41,16 @@ header a {
 }
 
 header a:hover {
-  color: #1976d2;
+  color: #c10d58;
+}
+
+#logo {
+  color: #c10d58;
+}
+
+.css-fvc8ir-MuiBadge-badge{
+  background-color: #c10d58;
+  color: #fff;
 }
 
 main {
@@ -50,7 +59,7 @@ main {
 
 footer {
   height: 60px;
-  background-color: #000;
+  background-color: #3f0015;
   color: #fff;
   display: flex;
   justify-content: center;
