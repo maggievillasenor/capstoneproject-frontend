@@ -61,7 +61,7 @@ export default function AdminPage () {
                         Add new product
                 </Button>
             </div>
-            {projects.map((product) => (
+            {products.map((product) => (
                 <ProductItem 
                     key={product._id} 
                     product={product}
