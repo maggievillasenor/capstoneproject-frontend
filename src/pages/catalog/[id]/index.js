@@ -11,6 +11,7 @@ function Product({ product }) {
       <NextSeo
         title={product.name}
         description={product.description}
+        price={product.price}
         openGraph={{
           title: "Title",
           description: "Description of the product",
@@ -30,25 +31,31 @@ function Product({ product }) {
         <PageDescription
           title={product.name}
           description={product.description}
+          price={product.price}
         />
-        <Box textAlign="center">
-          <Button variant="contained" size="large">
-            Product Link
-          </Button>
-        </Box>
+        
         <Box>
           <Image
             src={product.imageUrl}
-            width={900}
-            height={550}
+            width={500}
+            height={500}
             alt="Image product"
           />
         </Box>
-        <h1>Product Price</h1>
+        <h1>Description</h1>
         <Box>
-          <span>{project.price}</span>
+          <span>${product.description}</span>
         </Box>
-        <Link href="/products">
+        <h1>Price</h1>
+        <Box>
+          <span>${product.price}</span>
+        </Box>
+        <Box textAlign="center">
+          <Button variant="contained" size="large">
+            Add to Cart
+          </Button>
+        </Box>
+        <Link href="/catalog">
           <Button variant="contained" size="large">
             Go back
           </Button>
@@ -61,7 +68,7 @@ function Product({ product }) {
 export async function getStaticPaths() {
   try {
     const products = await getProducts();
-    const paths = products.map((products) => {
+    const paths = products.map((product) => {
       return { params: { id: product._id.toString() } };
     });
     return {

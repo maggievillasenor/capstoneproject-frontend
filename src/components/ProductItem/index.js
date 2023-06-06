@@ -17,6 +17,7 @@ export default function ProductItem({ product, handleDelete, handleEdit }) {
                 <Stack spacing={4}>
                     <h3>{product.name}</h3>
                     <div>{product.description}</div>
+                    <div>{product.price}</div>
                     <ItemActions 
                         id={product._id}
                         onDelete={ handleDelete }

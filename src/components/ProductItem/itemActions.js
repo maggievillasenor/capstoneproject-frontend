@@ -31,7 +31,7 @@ export default function ItemActions({ id, onEdit, onDelete }) {
                     size="large"
                     onClick={() => router.push(`/catalog/${id}`)}
                 >
-                    Use Case
+                    View Product
                 </Button>
             )}
         </>

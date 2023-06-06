@@ -11,7 +11,7 @@ export default function CatalogPage ({products}) {
         />
 
         {products.map((product) => (
-            <ProductItem key={product._id} product={product} />
+            <ProductItem id="grid" key={product._id} product={product} />
         ))}
     </section>);
 }

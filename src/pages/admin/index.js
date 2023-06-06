@@ -9,7 +9,7 @@ import { useEffect, useState } from "react";
 export default function AdminPage () {
 
     const[editProduct, setEditProduct] = useState()
-    const [isNewProductModalVisible, setIsNewProducttModalVisible] = useState(false)
+    const [isNewProductModalVisible, setIsNewProductModalVisible] = useState(false)
     const [products, setProducts] = useState([])
 
     useEffect(() =>{
